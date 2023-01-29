@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+	@apply cursor-pointer hover:scale-95 hover:opacity-90 active:scale-90 transition;
+}
