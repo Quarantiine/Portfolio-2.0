@@ -2,6 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+/* TAILWIND CSS */
+
 .btn {
 	@apply cursor-pointer hover:scale-95 hover:opacity-90 active:scale-90 transition;
+}
+
+.base-bg-1 {
+	@apply bg-[#0E51FF];
+}
+
+.base-col-1 {
+	@apply text-[#0E51FF];
+}
+
+/* CSS */
+
+body {
+	scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+	width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: rgb(255, 255, 255);
+}
+body::-webkit-scrollbar-track {
+	background-color: rgb(26, 26, 26);
+}
+
+.tab-content::-webkit-scrollbar {
+	width: 5px;
+}
+.tab-content::-webkit-scrollbar-thumb {
+	background-color: rgb(255, 255, 255);
+}
+.tab-content::-webkit-scrollbar-track {
+	background-color: transparent;
 }

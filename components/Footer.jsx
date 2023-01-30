@@ -16,10 +16,10 @@ const Footer = () => {
 						<div>
 							<h1 className="text-lg font-semibold">Socials</h1>
 							<div className="flex flex-col justify-center items-start gap-1">
-								<Link href={"#/"} className="text-sm font-light btn">
+								<Link href={"https://codepen.io/Daniel_CoDe"} target="_blank" className="text-sm font-light btn">
 									My Codepen
 								</Link>
-								<Link href={"#/"} className="text-sm font-light btn">
+								<Link href={"https://github.com/Quarantiine/"} target={"_blank"} className="text-sm font-light btn">
 									My GitHub
 								</Link>
 							</div>
@@ -35,7 +35,7 @@ const Footer = () => {
 					<div className="flex flex-wrap justify-center items-center gap-5">
 						{footerData.map((data, i) => (
 							<Link key={i} href={data.link} target="_blank">
-								<Image className="btn" src={data.img} alt="social media link" width={200} height={200} />
+								<Image className="btn" src={data.img} alt="social media link" width={180} height={180} />
 							</Link>
 						))}
 					</div>
