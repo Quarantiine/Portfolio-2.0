@@ -131,9 +131,8 @@ const HeroSection = ({ heroTitleTailwind, heroImgTailwind }) => {
 					src="/images/hero-bg-img.jpg"
 					alt="hero img"
 					fill
-					sizes="(max-width: 768px) 100vw,
-					(max-width: 1200px) 50vw,
-					33vw"
+					sizes="true"
+					priority="true"
 					onLoad={() => setHeroImgLoaded(true)}
 				/>
 				<div className="absolute w-full h-full bg-gradient-to-t from-[#111] via-[#111111d5] to-transparent"></div>

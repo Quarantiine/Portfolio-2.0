@@ -43,7 +43,7 @@ const TabBar = () => {
 						</p>
 						{filterBtnText === btn.text.toLowerCase() && (
 							<div
-								className={`filter-dropdown transition duration-500 bg-[#111] rounded-md w-full flex flex-col justify-center items-start overflow-hidden`}
+								className={`filter-dropdown bg-[#111] rounded-md w-full flex flex-col justify-center items-start overflow-hidden`}
 							>
 								{btn.dropdownText.map((text, i) => (
 									<button

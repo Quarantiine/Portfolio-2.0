@@ -11,8 +11,6 @@ const ProjectTab = () => {
 	const [filterBtnText, setFilterBtnText] = useState(``);
 	const [filterDropdownBtnText, setFilterDropdownBtnText] = useState(``);
 
-	console.log(filterDropdownBtnText);
-
 	return (
 		<FilterBtnActivationCtx.Provider
 			value={{ filterBtnText, setFilterBtnText, filterDropdownBtnText, setFilterDropdownBtnText }}
@@ -27,7 +25,7 @@ const ProjectTab = () => {
 
 const TabContent = ({ filterDropdownBtnText }) => {
 	return (
-		<div className="tab-content flex flex-wrap justify-center items-start gap-5 relative h-full overflow-y-scroll px-1">
+		<div className="tab-content flex flex-wrap justify-center items-start gap-5 relative w-full h-full overflow-y-scroll px-1">
 			{data.map((project, i) => {
 				return project.tags
 					.filter((filteredTags) => filteredTags.tag === filterDropdownBtnText)

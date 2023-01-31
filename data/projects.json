@@ -13,7 +13,8 @@
 			{ "text": "NPM" }
 		],
 		"tags": [{ "tag": "intermidate" }, { "tag": "react" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }],
-		"completionTime": "COMPLETIONG TIME: ~ 5 days"
+		"completionTime": "COMPLETIONG TIME: ~ 5 days",
+		"id": 1
 	},
 	{
 		"title": "Meltony Replica",
@@ -21,7 +22,8 @@
 		"img": "/images/projectW-2.png",
 		"lang": [{ "text": "HTML" }, { "text": "JS" }, { "text": "SCSS" }, { "text": "CRApp" }, { "text": "NPM" }],
 		"tags": [{ "tag": "intermidate" }, { "tag": "html" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }],
-		"completionTime": "COMPLETIONG TIME: ~ 5 days"
+		"completionTime": "COMPLETIONG TIME: ~ 5 days",
+		"id": 2
 	},
 	{
 		"title": "Elementor Replica",
@@ -29,7 +31,8 @@
 		"img": "/images/projectW-3.png",
 		"lang": [{ "text": "HTML" }, { "text": "JS" }, { "text": "SCSS" }, { "text": "CRApp" }, { "text": "NPM" }],
 		"tags": [{ "tag": "intermidate" }, { "tag": "html" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }],
-		"completionTime": "COMPLETIONG TIME: ~ 6 days"
+		"completionTime": "COMPLETIONG TIME: ~ 6 days",
+		"id": 3
 	},
 	{
 		"title": "Poket Replica",
@@ -37,7 +40,8 @@
 		"img": "/images/projectW-4.png",
 		"lang": [{ "text": "HTML" }, { "text": "JS" }, { "text": "SCSS" }, { "text": "CRApp" }, { "text": "NPM" }],
 		"tags": [{ "tag": "intermidate" }, { "tag": "html" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }],
-		"completionTime": "COMPLETIONG TIME: ~ 5 days"
+		"completionTime": "COMPLETIONG TIME: ~ 5 days",
+		"id": 4
 	},
 	{
 		"title": "Elegant Themes Replica",
@@ -45,6 +49,7 @@
 		"img": "/images/projectW-5.png",
 		"lang": [{ "text": "HTML" }, { "text": "JS" }, { "text": "SCSS" }, { "text": "CRApp" }, { "text": "NPM" }],
 		"tags": [{ "tag": "hard" }, { "tag": "html" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }],
-		"completionTime": "COMPLETIONG TIME: ~ 6 days"
+		"completionTime": "COMPLETIONG TIME: ~ 6 days",
+		"id": 5
 	}
 ]
