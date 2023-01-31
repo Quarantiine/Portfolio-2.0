@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
 
 	return (
 		<>
-			{!loadDoc && <Loader />}
+			{!loadDoc && <Loader disableText={true} />}
 			<div className={`bg-[#111] top-0 left-0 w-full text-white min-h-[100vh] pb-20`}>
 				<main>{children}</main>
 			</div>

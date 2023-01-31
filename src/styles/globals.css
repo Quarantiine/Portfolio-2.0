@@ -38,5 +38,15 @@ body::-webkit-scrollbar-track {
 	background-color: rgb(255, 255, 255);
 }
 .tab-content::-webkit-scrollbar-track {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.tags-container::-webkit-scrollbar {
+	height: 0px;
+}
+.tags-container::-webkit-scrollbar-thumb {
+	background-color: rgb(255, 255, 255);
+}
+.tags-container::-webkit-scrollbar-track {
 	background-color: transparent;
 }

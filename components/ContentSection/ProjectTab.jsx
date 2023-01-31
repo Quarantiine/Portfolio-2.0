@@ -1,41 +1,87 @@
+import { createContext, useContext, useState } from "react";
+import ContentFilters from "./ContentFilters";
+import data from "../../data/projects.json";
+import Link from "next/link";
+import Image from "next/image";
+
+const FilterBtnActivationCtx = createContext();
+export { FilterBtnActivationCtx };
+
 const ProjectTab = () => {
+	const [filterBtnText, setFilterBtnText] = useState(``);
+	const [filterDropdownBtnText, setFilterDropdownBtnText] = useState(``);
+
+	console.log(filterDropdownBtnText);
+
 	return (
-		<>
-			<div className="flex justify-center items-center">
-				<TabBar />
-				<TabContent />
+		<FilterBtnActivationCtx.Provider
+			value={{ filterBtnText, setFilterBtnText, filterDropdownBtnText, setFilterDropdownBtnText }}
+		>
+			<div className="flex justify-center items-start gap-5 sm:gap-10">
+				<ContentFilters />
+				<TabContent filterDropdownBtnText={filterDropdownBtnText} />
 			</div>
-		</>
+		</FilterBtnActivationCtx.Provider>
 	);
 };
 
-const TabBar = () => {
+const TabContent = ({ filterDropdownBtnText }) => {
 	return (
-		<div className="hidden sm:flex w-[270px] h-[497px] rounded-lg bg-black flex-col justify-start items-start gap-3 p-3">
-			<h1 className="text-center font-semibold text-4xl">FILTERS</h1>
-			<div className="flex flex-col gap-1 justify-center items-start">
-				<p className="btn font-thin">DIFFICULTY</p>
-				<p className="btn font-thin">FRAMEWORK/LANGUAGE</p>
-				<p className="btn font-thin">COMPLETION TIME</p>
-				<p className="btn font-thin">TYPE</p>
-			</div>
+		<div className="tab-content flex flex-wrap justify-center items-start gap-5 relative h-full overflow-y-scroll px-1">
+			{data.map((project, i) => {
+				return project.tags
+					.filter((filteredTags) => filteredTags.tag === filterDropdownBtnText)
+					.map(() => {
+						return <Project key={project.id} index={i + 1} project={project} />;
+					});
+			})}
+			{!filterDropdownBtnText &&
+				data.map((project, i) => {
+					return <Project key={project.id} index={i + 1} project={project} />;
+				})}
 		</div>
 	);
 };
 
-const TabContent = () => {
+const Project = ({ project, index }) => {
+	const [imgLoaded, setImgLoaded] = useState(false);
+
 	return (
-		<div className="tab-content flex flex-wrap justify-center items-center gap-5 relative h-[495px] overflow-y-scroll px-5">
-			<div className="w-[200px] h-[200px] rounded-lg bg-gray-900"></div>
-			<div className="w-[200px] h-[200px] rounded-lg bg-gray-900"></div>
-			<div className="w-[200px] h-[200px] rounded-lg bg-gray-900"></div>
-			<div className="w-[200px] h-[200px] rounded-lg bg-gray-900"></div>
-			<div className="w-[200px] h-[200px] rounded-lg bg-gray-900"></div>
-			<div className="w-[200px] h-[200px] rounded-lg bg-gray-900"></div>
-			<div className="w-[200px] h-[200px] rounded-lg bg-gray-900"></div>
-			<div className="w-[200px] h-[200px] rounded-lg bg-gray-900"></div>
-			<div className="w-[200px] h-[200px] rounded-lg bg-gray-900"></div>
-			<div className="w-[200px] h-[200px] rounded-lg bg-gray-900"></div>
+		<div className={`relative w-[250px] h-[250px] rounded-lg bg-gray-900 overflow-hidden p-2`}>
+			<p className="absolute top-0 left-0 z-10 bg-black w-8 h-8 text-white flex justify-center items-center rounded-br-lg shadow-lg">
+				{index}
+			</p>
+			<div className="relative w-full h-full">
+				<div className="absolute w-full h-full top-0 left-0 rounded-md overflow-hidden">
+					<Image className="object-cover object-top" src={project.img} alt={`${project.title} img`} fill sizes="true" />
+					<div className=" bg-gradient-to-t to-transparent from-black absolute w-full h-full"></div>
+				</div>
+				<div className="absolute top-0 left-0 w-full h-full flex justify-between p-2 items-end gap-2">
+					<div className="flex flex-col justify-center items-start">
+						<div className="tags-container w-[100px] flex justify-start items-center gap-2 pb-1 overflow-x-scroll overflow-y-hidden">
+							{project.lang.map((langs, i) => (
+								<p key={i} className="base-bg-1 py-[1px] px-2 rounded-md h-fit w-full text-[12px]">
+									{langs.text}
+								</p>
+							))}
+						</div>
+						<p className="text-md font-semibold line-clamp-1" title={project.title}>
+							{project.title}
+						</p>
+						<p className="text-[9px] font-thin">{project.completionTime}</p>
+					</div>
+					<div className="flex flex-col justify-center items-center gap-2">
+						<Link href={project.link} target={`_blank`}>
+							{/* <Image src={"/icons/open_in_browser_icon.svg"} alt="open window icon" width={25} height={25} /> */}
+							<button className="base-bg-1 px-2 py-1 text-md rounded-sm hover:opacity-60">Website</button>
+						</Link>
+						{/* <Image src={"/icons/open_in_browser_icon.svg"} alt="open window icon" width={25} height={25} /> */}
+						<button className="border border-white hover:bg-[#0E51FF] hover:border-transparent transition px-2 py-1 text-md rounded-sm">
+							Preview
+						</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 };

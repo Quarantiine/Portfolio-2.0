@@ -94,12 +94,12 @@ export default function Home() {
 const Tabs = ({ tabsBtns, btnClicked, setBtnClicked }) => {
 	return (
 		<>
-			<div className="w-full p-1 flex flex-wrap gap-5 justify-center sm:justify-start items-center">
+			<div className="w-fit p-1 flex flex-wrap gap-5 justify-center sm:justify-start items-center">
 				{tabsBtns.map((tab, i) => (
 					<button
 						className={`${
 							btnClicked === tab.title ? "base-bg-1" : "bg-transparent"
-						} btn w-fit h-fit px-8 py-2 border rounded-md text-xl`}
+						} btn w-fit h-fit px-4 py-1 border rounded-md text-lg`}
 						onClick={(e) => setBtnClicked(e.target.textContent)}
 						key={i}
 					>
@@ -131,8 +131,9 @@ const HeroSection = ({ heroTitleTailwind, heroImgTailwind }) => {
 					src="/images/hero-bg-img.jpg"
 					alt="hero img"
 					fill
-					sizes="true"
-					priority="true"
+					sizes="(max-width: 768px) 100vw,
+					(max-width: 1200px) 50vw,
+					33vw"
 					onLoad={() => setHeroImgLoaded(true)}
 				/>
 				<div className="absolute w-full h-full bg-gradient-to-t from-[#111] via-[#111111d5] to-transparent"></div>

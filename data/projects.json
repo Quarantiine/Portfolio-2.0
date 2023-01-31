@@ -1,0 +1,50 @@
+[
+	{
+		"title": "Luseta Beauty Replica",
+		"link": "https://react-web-1-dw.vercel.app/",
+		"img": "/images/projectW-1.png",
+		"lang": [
+			{ "text": "React" },
+			{ "text": "JS" },
+			{ "text": "Tailwind" },
+			{ "text": "Next.js" },
+			{ "text": "ChatGPT" },
+			{ "text": "CSS" },
+			{ "text": "NPM" }
+		],
+		"tags": [{ "tag": "intermidate" }, { "tag": "react" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }],
+		"completionTime": "COMPLETIONG TIME: ~ 5 days"
+	},
+	{
+		"title": "Meltony Replica",
+		"link": "https://quarantiine.github.io/Professional-Website/",
+		"img": "/images/projectW-2.png",
+		"lang": [{ "text": "HTML" }, { "text": "JS" }, { "text": "SCSS" }, { "text": "CRApp" }, { "text": "NPM" }],
+		"tags": [{ "tag": "intermidate" }, { "tag": "html" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }],
+		"completionTime": "COMPLETIONG TIME: ~ 5 days"
+	},
+	{
+		"title": "Elementor Replica",
+		"link": "https://quarantiine.github.io/Professional-Website-2/",
+		"img": "/images/projectW-3.png",
+		"lang": [{ "text": "HTML" }, { "text": "JS" }, { "text": "SCSS" }, { "text": "CRApp" }, { "text": "NPM" }],
+		"tags": [{ "tag": "intermidate" }, { "tag": "html" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }],
+		"completionTime": "COMPLETIONG TIME: ~ 6 days"
+	},
+	{
+		"title": "Poket Replica",
+		"link": "https://quarantiine.github.io/Professional-Website-3/",
+		"img": "/images/projectW-4.png",
+		"lang": [{ "text": "HTML" }, { "text": "JS" }, { "text": "SCSS" }, { "text": "CRApp" }, { "text": "NPM" }],
+		"tags": [{ "tag": "intermidate" }, { "tag": "html" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }],
+		"completionTime": "COMPLETIONG TIME: ~ 5 days"
+	},
+	{
+		"title": "Elegant Themes Replica",
+		"link": "https://quarantiine.github.io/Professional-Website-4/",
+		"img": "/images/projectW-5.png",
+		"lang": [{ "text": "HTML" }, { "text": "JS" }, { "text": "SCSS" }, { "text": "CRApp" }, { "text": "NPM" }],
+		"tags": [{ "tag": "hard" }, { "tag": "html" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }],
+		"completionTime": "COMPLETIONG TIME: ~ 6 days"
+	}
+]

@@ -8,7 +8,7 @@ const ContentSection = () => {
 
 	return (
 		<>
-			<div className="w-fit h-[500px] relative">
+			<div className="w-full h-full py-10 relative">
 				{btnClicked === tabsBtns[0].title ? <ProjectTab /> : null}
 				{btnClicked === tabsBtns[1].title ? <AboutMeTab /> : null}
 			</div>
