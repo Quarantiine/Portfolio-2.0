@@ -58,7 +58,11 @@ const Project = ({ project, index }) => {
 					<div className="flex flex-col justify-center items-start">
 						<div className="tags-container w-[100px] flex justify-start items-center gap-2 pb-1 overflow-x-scroll overflow-y-hidden">
 							{project.lang.map((langs, i) => (
-								<p key={i} className="base-bg-1 py-[1px] px-2 rounded-md h-fit w-full text-[12px]">
+								<p
+									key={i}
+									title={langs.fullTxt}
+									className="base-bg-1 py-[1px] px-2 rounded-md h-fit w-full text-[12px]"
+								>
 									{langs.text}
 								</p>
 							))}
