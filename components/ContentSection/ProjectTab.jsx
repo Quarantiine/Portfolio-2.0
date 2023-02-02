@@ -74,10 +74,8 @@ const Project = ({ project, index }) => {
 					</div>
 					<div className="flex flex-col justify-center items-center gap-2">
 						<Link href={project.link} target={`_blank`}>
-							{/* <Image src={"/icons/open_in_browser_icon.svg"} alt="open window icon" width={25} height={25} /> */}
 							<button className="base-bg-1 px-2 py-1 text-md rounded-sm hover:opacity-60">Website</button>
 						</Link>
-						{/* <Image src={"/icons/open_in_browser_icon.svg"} alt="open window icon" width={25} height={25} /> */}
 						<button className="border border-white hover:bg-[#0E51FF] hover:border-transparent transition px-2 py-1 text-md rounded-sm">
 							Preview
 						</button>
