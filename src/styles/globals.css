@@ -42,7 +42,7 @@ body::-webkit-scrollbar-track {
 }
 
 .tags-container::-webkit-scrollbar {
-	height: 0px;
+	height: 2px;
 }
 .tags-container::-webkit-scrollbar-thumb {
 	background-color: rgb(255, 255, 255);

@@ -12,7 +12,13 @@
 			{ "text": "CSS", "fullTxt": "Cascading Style Sheets" },
 			{ "text": "NPM", "fullTxt": "Node Package Manager" }
 		],
-		"tags": [{ "tag": "intermidate" }, { "tag": "react" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }],
+		"tags": [
+			{ "tag": "intermidate" },
+			{ "tag": "react" },
+			{ "tag": "~ 1 week" },
+			{ "tag": "replicated websites" },
+			{ "tag": "next.js" }
+		],
 		"completionTime": "COMPLETIONG TIME: ~ 5 days",
 		"id": 1
 	},
@@ -27,7 +33,13 @@
 			{ "text": "CRApp", "fullTxt": "Create React App" },
 			{ "text": "NPM", "fullTxt": "Node Package Manager" }
 		],
-		"tags": [{ "tag": "easy" }, { "tag": "html" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }],
+		"tags": [
+			{ "tag": "easy" },
+			{ "tag": "html" },
+			{ "tag": "~ 1 week" },
+			{ "tag": "replicated websites" },
+			{ "tag": "create react app" }
+		],
 		"completionTime": "COMPLETIONG TIME: ~ 5 days",
 		"id": 2
 	},
@@ -42,7 +54,13 @@
 			{ "text": "CRApp", "fullTxt": "Create React App" },
 			{ "text": "NPM", "fullTxt": "Node Package Manager" }
 		],
-		"tags": [{ "tag": "intermidate" }, { "tag": "html" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }],
+		"tags": [
+			{ "tag": "intermidate" },
+			{ "tag": "html" },
+			{ "tag": "~ 1 week" },
+			{ "tag": "replicated websites" },
+			{ "tag": "create react app" }
+		],
 		"completionTime": "COMPLETIONG TIME: ~ 6 days",
 		"id": 3
 	},
@@ -57,7 +75,13 @@
 			{ "text": "CRApp", "fullTxt": "Create React App" },
 			{ "text": "NPM", "fullTxt": "Node Package Manager" }
 		],
-		"tags": [{ "tag": "intermidate" }, { "tag": "html" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }],
+		"tags": [
+			{ "tag": "intermidate" },
+			{ "tag": "html" },
+			{ "tag": "~ 1 week" },
+			{ "tag": "replicated websites" },
+			{ "tag": "create react app" }
+		],
 		"completionTime": "COMPLETIONG TIME: ~ 5 days",
 		"id": 4
 	},
@@ -72,7 +96,13 @@
 			{ "text": "CRApp", "fullTxt": "Create React App" },
 			{ "text": "NPM", "fullTxt": "Node Package Manager" }
 		],
-		"tags": [{ "tag": "hard" }, { "tag": "html" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }],
+		"tags": [
+			{ "tag": "hard" },
+			{ "tag": "html" },
+			{ "tag": "~ 1 week" },
+			{ "tag": "replicated websites" },
+			{ "tag": "create react app" }
+		],
 		"completionTime": "COMPLETIONG TIME: ~ 6 days",
 		"id": 5
 	}

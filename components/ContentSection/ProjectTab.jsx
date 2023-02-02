@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useRef, useState } from "react";
 import ContentFilters from "./ContentFilters";
 import data from "../../data/projects.json";
 import Link from "next/link";
@@ -10,22 +10,26 @@ export { FilterBtnActivationCtx };
 const ProjectTab = () => {
 	const [filterBtnText, setFilterBtnText] = useState(``);
 	const [filterDropdownBtnText, setFilterDropdownBtnText] = useState(``);
+	const totalProjects = useRef();
 
 	return (
 		<FilterBtnActivationCtx.Provider
 			value={{ filterBtnText, setFilterBtnText, filterDropdownBtnText, setFilterDropdownBtnText }}
 		>
 			<div className="flex justify-center items-start gap-5 sm:gap-10">
-				<ContentFilters />
-				<TabContent filterDropdownBtnText={filterDropdownBtnText} />
+				<ContentFilters totalProjects={totalProjects} />
+				<TabContent filterDropdownBtnText={filterDropdownBtnText} totalProjects={totalProjects} />
 			</div>
 		</FilterBtnActivationCtx.Provider>
 	);
 };
 
-const TabContent = ({ filterDropdownBtnText }) => {
+const TabContent = ({ filterDropdownBtnText, totalProjects }) => {
 	return (
-		<div className="tab-content flex flex-wrap justify-center items-start gap-5 relative w-full h-full overflow-y-scroll px-1">
+		<div
+			ref={totalProjects}
+			className="tab-content flex flex-wrap justify-center items-start gap-5 relative w-full h-full overflow-y-scroll px-1"
+		>
 			{data.map((project, i) => {
 				return project.tags
 					.filter((filteredTags) => filteredTags.tag === filterDropdownBtnText)
