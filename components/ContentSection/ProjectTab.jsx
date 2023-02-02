@@ -76,9 +76,6 @@ const Project = ({ project, index }) => {
 						<Link href={project.link} target={`_blank`}>
 							<button className="base-bg-1 px-2 py-1 text-md rounded-sm hover:opacity-60">Website</button>
 						</Link>
-						<button className="border border-white hover:bg-[#0E51FF] hover:border-transparent transition px-2 py-1 text-md rounded-sm">
-							Preview
-						</button>
 					</div>
 				</div>
 			</div>
