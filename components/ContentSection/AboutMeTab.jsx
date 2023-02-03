@@ -3,6 +3,24 @@ import Image from "next/image";
 import Link from "next/link";
 
 const AboutMeTab = () => {
+	const professionalProjects = [
+		{
+			link: "https://www.interludescores.com/",
+			title: "Interlude Scores",
+		},
+		{
+			link: "https://www.digitalpublishinginc.com/",
+			title: "Digital Publishing Inc.",
+		},
+		{
+			link: "#/",
+			title: "Heres America",
+		},
+		{
+			link: "#/",
+			title: "PAE Website",
+		},
+	];
 	return (
 		<div className="relative flex gap-2 justify-center items-center w-full h-full">
 			{/* <Loader loaderTailwind={"!w-10 !h-10"} /> */}
