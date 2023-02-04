@@ -18,7 +18,8 @@
 			{ "tag": "create react app" }
 		],
 		"completionTime": "COMPLETIONG TIME: ~ 6 days",
-		"id": 5
+		"id": 5,
+		"startDate": ""
 	},
 	{
 		"title": "Luseta Beauty Replica",
@@ -41,7 +42,8 @@
 			{ "tag": "next.js" }
 		],
 		"completionTime": "COMPLETIONG TIME: ~ 5 days",
-		"id": 1
+		"id": 1,
+		"startDate": ""
 	},
 	{
 		"title": "Meltony Replica",
@@ -62,7 +64,8 @@
 			{ "tag": "create react app" }
 		],
 		"completionTime": "COMPLETIONG TIME: ~ 5 days",
-		"id": 2
+		"id": 2,
+		"startDate": ""
 	},
 	{
 		"title": "Elementor Replica",
@@ -83,7 +86,8 @@
 			{ "tag": "create react app" }
 		],
 		"completionTime": "COMPLETIONG TIME: ~ 6 days",
-		"id": 3
+		"id": 3,
+		"startDate": ""
 	},
 	{
 		"title": "Poket Replica",
@@ -104,6 +108,7 @@
 			{ "tag": "create react app" }
 		],
 		"completionTime": "COMPLETIONG TIME: ~ 5 days",
-		"id": 4
+		"id": 4,
+		"startDate": ""
 	}
 ]
