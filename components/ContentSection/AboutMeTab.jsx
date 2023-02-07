@@ -13,7 +13,7 @@ const AboutMeTab = () => {
 			title: "Digital Publishing Inc.",
 		},
 		{
-			link: "#/",
+			link: "https://www.heresamericathedreamersland.com/",
 			title: "Heres America",
 		},
 		{
@@ -24,8 +24,8 @@ const AboutMeTab = () => {
 	return (
 		<div className="relative flex gap-2 justify-center items-center w-full h-full">
 			{/* <Loader loaderTailwind={"!w-10 !h-10"} /> */}
-			<div className="w-[70%] h-auto mx-auto flex flex-col justify-center items-center gap-32">
-				<div className="w-full xl:w-[800px] h-auto grid gap-0 grid-cols-1 xl:grid-cols-2 justify-start items-center">
+			<div className="w-[90%] lg:w-[70%] h-auto mx-auto flex flex-col justify-center items-center gap-32">
+				<div className="w-full xl:w-[800px] h-auto grid gap-10 xl:gap-0 grid-cols-1 xl:grid-cols-2 justify-start items-center">
 					<div className="bg-gray-700 w-44 sm:w-80 h-44 sm:h-80 rounded-md mx-auto xl:m-0"></div>
 					<div className="flex flex-col justify-center items-center xl:items-start gap-2 text-center xl:text-start">
 						<h1 className="text-2xl font-medium">Daniel Ward</h1>
