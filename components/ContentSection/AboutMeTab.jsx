@@ -1,4 +1,3 @@
-import Loader from "components/Loader";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -42,7 +41,7 @@ const AboutMeTab = () => {
 						<div className="flex justify-center items-center gap-10">
 							<div className="flex flex-col justify-center items-center text-center md:text-start md:items-start gap-3">
 								<h1 className="text-3xl font-semibold">PROGRAMMING SKILLS</h1>
-								<ul className="flex justify-center items-center text-center md:text-start md:items-start pl-10 gap-20 list-disc">
+								<ul className="flex justify-center items-center text-center md:text-start md:items-start md:pl-10 gap-20 list-disc">
 									<div>
 										<li>HTML</li>
 										<li>CSS</li>
@@ -63,7 +62,7 @@ const AboutMeTab = () => {
 						<div className="flex justify-center items-center gap-10">
 							<div className="flex flex-col justify-center items-start gap-3">
 								<h1 className="text-3xl font-semibold">OTHER SKILLS</h1>
-								<ul className="flex flex-col justify-center items-start gap-2 pl-10 list-disc">
+								<ul className="flex flex-col justify-center items-start gap-2 md:pl-10 list-disc">
 									<li>UI Design</li>
 									<li>Figma</li>
 									<li>Git</li>
