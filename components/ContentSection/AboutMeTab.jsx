@@ -49,6 +49,7 @@ const AboutMeTab = () => {
 										<li>JS</li>
 										<li>React</li>
 										<li>Tailwind</li>
+										<li>Typescript</li>
 									</div>
 									<div>
 										<li>Next.js</li>

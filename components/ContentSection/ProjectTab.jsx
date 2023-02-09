@@ -28,7 +28,7 @@ const TabContent = ({ filterDropdownBtnText, totalProjects }) => {
 	return (
 		<div
 			ref={totalProjects}
-			className="tab-content flex flex-wrap justify-center items-start gap-5 relative w-full xl:w-[1000px] h-full overflow-y-scroll px-1"
+			className="tab-content flex flex-wrap justify-center items-start gap-5 relative w-full xl:w-fit h-full overflow-y-scroll px-1"
 		>
 			{data.map((project, i) => {
 				return project.tags
