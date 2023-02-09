@@ -17,7 +17,7 @@ const AboutMeTab = () => {
 			title: "Heres America",
 		},
 		{
-			link: "#/",
+			link: "https://www.practicalamericanenglish.com/",
 			title: "PAE Website",
 		},
 	];
