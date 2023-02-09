@@ -26,7 +26,9 @@ const AboutMeTab = () => {
 			{/* <Loader loaderTailwind={"!w-10 !h-10"} /> */}
 			<div className="w-[90%] lg:w-[70%] h-auto mx-auto flex flex-col justify-center items-center gap-32">
 				<div className="w-full xl:w-[800px] h-auto grid gap-10 xl:gap-0 grid-cols-1 xl:grid-cols-2 justify-start items-center">
-					<div className="bg-gray-700 w-44 sm:w-80 h-44 sm:h-80 rounded-md mx-auto xl:m-0"></div>
+					<div className="bg-gray-700 w-44 sm:w-64 h-44 sm:h-64 rounded-md mx-auto xl:m-0 relative overflow-hidden">
+						<Image src="/images/about-me-picture.jpg" alt="About me picture of creator" fill sizes="true" />
+					</div>
 					<div className="flex flex-col justify-center items-center xl:items-start gap-2 text-center xl:text-start">
 						<h1 className="text-2xl font-medium">Daniel Ward</h1>
 						<p>
