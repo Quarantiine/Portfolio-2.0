@@ -23,7 +23,7 @@ const TabBar = ({ totalProjects }) => {
 		},
 		{
 			text: "COMPLETION TIME",
-			dropdownText: [{ text: "~ 1 Week" }, { text: "~ 2 weeks" }, { text: "~ 3 weeks" }],
+			dropdownText: [{ text: "1 Week" }, { text: "2 weeks" }, { text: "3 weeks" }],
 		},
 		{
 			text: "TYPE",
