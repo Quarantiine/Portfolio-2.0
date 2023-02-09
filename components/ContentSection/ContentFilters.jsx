@@ -13,17 +13,22 @@ export default ContentFilters;
 
 const TabBar = ({ totalProjects }) => {
 	const filterBtns = [
-		{ text: "ALL", dropdownText: [] },
-		{ text: "DIFFICULTY", dropdownText: [{ text: "Easy" }, { text: "Intermidate" }, { text: "Hard" }] },
+		{
+			text: "ALL",
+			dropdownText: [],
+		},
 		{
 			text: "FRAMEWORK/LANGUAGE",
 			dropdownText: [{ text: "React" }, { text: "Html" }, { text: "Next.js" }, { text: "Create React App" }],
 		},
 		{
 			text: "COMPLETION TIME",
-			dropdownText: [{ text: "~ 1 Week" }, { text: "~ 2 weeks" }, { text: "~ 1 month" }, { text: "> 1 month" }],
+			dropdownText: [{ text: "~ 1 Week" }, { text: "~ 2 weeks" }, { text: "~ 3 weeks" }],
 		},
-		{ text: "TYPE", dropdownText: [{ text: "My Web Designs" }, { text: "Replicated Websites" }] },
+		{
+			text: "TYPE",
+			dropdownText: [{ text: "My Web Designs" }, { text: "Replicated Websites" }],
+		},
 	];
 	const { filterBtnText, setFilterBtnText, filterDropdownBtnText, setFilterDropdownBtnText } =
 		useContext(FilterBtnActivationCtx);
