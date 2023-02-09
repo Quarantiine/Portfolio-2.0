@@ -28,7 +28,7 @@ const TabContent = ({ filterDropdownBtnText, totalProjects }) => {
 	return (
 		<div
 			ref={totalProjects}
-			className="tab-content flex flex-wrap justify-center items-start gap-5 relative w-full xl:w-[1000px] h-full overflow-y-scroll px-1"
+			className="tab-content flex flex-wrap justify-center items-start gap-5 relative w-full xl:w-fit h-full overflow-y-scroll px-1"
 		>
 			{data.map((project, i) => {
 				return project.tags
@@ -46,8 +46,6 @@ const TabContent = ({ filterDropdownBtnText, totalProjects }) => {
 };
 
 const Project = ({ project, index }) => {
-	const [imgLoaded, setImgLoaded] = useState(false);
-
 	return (
 		<div className={`relative w-[250px] h-[250px] rounded-lg bg-gray-900 overflow-hidden p-2`}>
 			<p className="absolute top-0 left-0 z-10 bg-black w-8 h-8 text-white flex justify-center items-center rounded-br-lg shadow-lg">

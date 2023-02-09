@@ -12,7 +12,6 @@ export { TabBtnsCtx };
 export default function Home() {
 	const tabsBtns = [{ title: "Projects" }, { title: "About Me" }];
 	const [btnClicked, setBtnClicked] = useState(tabsBtns[0].title);
-	const [projectData, setProjectData] = useState({});
 
 	const heroImgTailwind = "-translate-y-32 opacity-0";
 	const heroTitleTailwind = "-translate-y-32 opacity-0";
