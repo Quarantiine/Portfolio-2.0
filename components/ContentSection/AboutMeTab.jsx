@@ -24,16 +24,16 @@ const AboutMeTab = () => {
 		<div className="relative flex gap-2 justify-center items-center w-full h-full">
 			{/* <Loader loaderTailwind={"!w-10 !h-10"} /> */}
 			<div className="w-[90%] lg:w-[70%] h-auto mx-auto flex flex-col justify-center items-center gap-32">
-				<div className="w-full xl:w-[800px] h-auto grid gap-10 xl:gap-0 grid-cols-1 xl:grid-cols-2 justify-start items-center">
+				<div className="w-full xl:w-[600px] h-auto grid gap-10 xl:gap-0 grid-cols-1 xl:grid-cols-2 justify-start items-center">
 					<div className="bg-gray-700 w-44 sm:w-64 h-44 sm:h-64 rounded-md mx-auto xl:m-0 relative overflow-hidden">
 						<Image src="/images/about-me-picture.jpg" alt="About me picture of creator" fill sizes="true" />
 					</div>
 					<div className="flex flex-col justify-center items-center xl:items-start gap-2 text-center xl:text-start">
 						<h1 className="text-2xl font-medium">Daniel Ward</h1>
 						<p>
-							Im a React developer with a passion for delivering successful projects. I excel at crafting clean,
-							efficient code and delivering exceptional user experiences. Take a look at my portfolio to see my work.
-							Contact me for any questions or opportunities.
+							Im a React developer with a passion for delivering successful and well rounded projects. I excel at
+							crafting clean, efficient code and delivering exceptional user experiences. Take a look at my portfolio to
+							see my work.
 						</p>
 					</div>
 				</div>
@@ -69,8 +69,7 @@ const AboutMeTab = () => {
 									<li>UI Design</li>
 									<li>Figma</li>
 									<li>Git</li>
-									<li>GitHub</li>
-									<li>eCommerce Websites</li>
+									<li>SEO</li>
 								</ul>
 							</div>
 						</div>
@@ -111,10 +110,10 @@ const AboutMeTab = () => {
 				<div className="w-full text-center flex flex-col justify-center items-center gap-7">
 					<p>
 						Thank you for visiting my portfolio. Im a dedicated React developer and am ready to bring my skills to your
-						next project. Contact me for any questions or opportunities.
+						next project. Contact me for any questions.
 					</p>
 					<div className="flex w-full flex-col justify-center items-center gap-3">
-						<p>CHECK OUT MY SOCIAL MEDIA</p>
+						<p>CHECK OUT MY SOCIAL MEDIAS</p>
 						<Image
 							className="animate-bounce"
 							src="/icons/arrow_downward.svg"
