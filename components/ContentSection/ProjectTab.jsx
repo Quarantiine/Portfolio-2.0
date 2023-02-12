@@ -17,7 +17,7 @@ const ProjectTab = () => {
 			value={{ filterBtnText, setFilterBtnText, filterDropdownBtnText, setFilterDropdownBtnText }}
 		>
 			<div className="flex justify-center items-start gap-5 sm:gap-10">
-				<ContentFilters totalProjects={totalProjects} />
+				{/* <ContentFilters totalProjects={totalProjects} /> */}
 				<TabContent filterDropdownBtnText={filterDropdownBtnText} totalProjects={totalProjects} />
 			</div>
 		</FilterBtnActivationCtx.Provider>
@@ -75,11 +75,11 @@ const Project = ({ project, index }) => {
 						<p className="text-[9px] font-thin">{project.completionTime}</p>
 					</div>
 					<div className="flex flex-col justify-center items-center gap-2">
-						<Link href={project.link} target={`_blank`}>
-							<button className="base-bg-1 px-2 py-1 text-md rounded-sm hover:opacity-60">Website</button>
+						<Link href={project.link} target={`_blank`} className="w-full">
+							<button className="base-bg-1 px-2 py-1 text-md rounded-sm hover:opacity-60 w-full">Website</button>
 						</Link>
-						<Link href={project.codeLink} target={`_blank`}>
-							<button className="border border-white hover:bg-[#0E51FF] hover:border-transparent transition px-2 py-1 text-md rounded-sm">
+						<Link href={project.codeLink} target={`_blank`} className="w-full">
+							<button className="border border-white hover:bg-[#0E51FF] hover:border-transparent transition px-2 py-1 text-md rounded-sm w-full">
 								Code
 							</button>
 						</Link>
