@@ -54,7 +54,7 @@ const Footer = () => {
 									{!disappear && (
 										<p
 											className={`text-sm font-light select-all cursor-default absolute ${
-												copied ? "bg-green-500 -left-[70px] top-0" : "base-bg-1 -left-32 animate-bounce top-1"
+												copied ? "bg-green-500 -left-[70px] top-0" : "base-bg-1 -left-[70px] animate-bounce top-1"
 											} px-2 rounded-md flex justify-center items-center gap-1 text-center`}
 										>
 											{copied ? "copied!" : "copy"}
