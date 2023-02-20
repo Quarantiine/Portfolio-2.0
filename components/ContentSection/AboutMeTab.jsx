@@ -38,7 +38,15 @@ const AboutMeTab = () => {
 					</div>
 				</div>
 				<div className="flex flex-col md:flex-row justify-center items-center gap-10">
-					<div className="block md:hidden bg-gray-700 w-44 sm:w-80 h-44 sm:h-80 rounded-md"></div>
+					<div className="block md:hidden bg-gray-700 w-44 sm:w-80 h-44 sm:h-80 rounded-md relative">
+						<Image
+							className="object-cover object-right"
+							src="/images/about-skills-img.jpg"
+							alt="react skill img"
+							fill
+							sizes="true"
+						/>
+					</div>
 					<div className="flex flex-col justify-center items-center text-center md:text-start md:items-start gap-10">
 						<div className="flex justify-center items-center gap-10">
 							<div className="flex flex-col justify-center items-center text-center md:text-start md:items-start gap-3">
@@ -58,6 +66,7 @@ const AboutMeTab = () => {
 										<li>Sass</li>
 										<li>SCSS</li>
 										<li>NPM</li>
+										<li>Firebase</li>
 									</div>
 								</ul>
 							</div>
@@ -89,12 +98,15 @@ const AboutMeTab = () => {
 					<div className="flex flex-col flex-wrap justify-center items-center gap-2">
 						<h1 className="text-3xl font-semibold text-center">PROFESSIONAL PROJECTS</h1>
 						<h2 className="text-sm font-normal text-center">
-							Professional work projects I have worked on for clients and businesses
+							Professional projects I am working on at my current job as a React Developer.
 						</h2>
 					</div>
 					<ul className="flex flex-wrap justify-center items-center gap-10 list-disc">
 						{professionalProjects.map((project, i) => (
-							<li key={i}>
+							<li className="relative" key={i}>
+								<div className="w-fit h-fit absolute -bottom-6 left-0 right-0 mx-auto px-4 py-1 rounded-md base-bg-1 text-white">
+									<p className="text-[10px]">In Progress</p>
+								</div>
 								<Link
 									className="underline hover:no-underline"
 									target={project.link === "#/" ? "_self" : "_blank"}
