@@ -16,7 +16,10 @@ const CommentSection = () => {
 		const year = displayDate.getFullYear();
 		const timeSystem = () => {
 			const hour = displayDate.getHours() > 12 ? displayDate.getHours() - 12 : displayDate.getHours();
-			const min = displayDate.getHours() < 11 ? `${displayDate.getMinutes()} am` : `${displayDate.getMinutes()} pm`;
+			const min =
+				displayDate.getHours() < 11
+					? `${displayDate.getMinutes() < 10 ? `0${displayDate.getMinutes()}` : displayDate.getMinutes()} am`
+					: `${displayDate.getMinutes() < 10 ? `0${displayDate.getMinutes()}` : displayDate.getMinutes()} pm`;
 
 			const fullTime = `${hour}:${min}`;
 			return fullTime;
