@@ -57,7 +57,7 @@ const Footer = () => {
 												copied ? "bg-green-500 -left-[70px] top-0" : "base-bg-1 -left-32 animate-bounce top-1"
 											} px-2 rounded-md flex justify-center items-center gap-1 text-center`}
 										>
-											{copied ? "copied!" : "one click copy"}
+											{copied ? "copied!" : "copy"}
 											{!copied && (
 												<span>
 													<Image
