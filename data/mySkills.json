@@ -1,0 +1,19 @@
+[
+	{
+		"skillSet1": [
+			{ "skill": "HTML" },
+			{ "skill": "CSS" },
+			{ "skill": "JS" },
+			{ "skill": "React" },
+			{ "skill": "Tailwind" },
+			{ "skill": "Typescript" }
+		],
+		"skillSet2": [
+			{ "skill": "Next.js" },
+			{ "skill": "Node.js" },
+			{ "skill": "Sass" },
+			{ "skill": "SCSS" },
+			{ "skill": "NPM" }
+		]
+	}
+]

@@ -1,0 +1,19 @@
+[
+	{
+		"title": "Digital Publishing Inc.",
+		"working": false,
+		"fake": false,
+		"company": [
+			{ "name": "Interlude Scores", "link": "https://www.interludescores.com/", "fullyFunctional": false },
+			{ "name": "Heres America", "link": "https://www.heresamericathedreamersland.com/", "fullyFunctional": false },
+			{ "name": "Digital Publishing Inc.", "link": "https://www.digitalpublishinginc.com/", "fullyFunctional": false },
+			{ "name": "PAE Website", "link": "https://www.practicalamericanenglish.com/", "fullyFunctional": false }
+		]
+	},
+	{
+		"title": "Job Coming...",
+		"working": false,
+		"fake": true,
+		"company": [{ "name": "Untitled", "link": "#/", "fullyFunctional": false }]
+	}
+]

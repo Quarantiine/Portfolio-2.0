@@ -3,6 +3,8 @@ import ContentFilters from "./ContentFilters";
 import data from "../../data/projects.json";
 import Link from "next/link";
 import Image from "next/image";
+import BestProjects from "./BestProjects";
+import ProfessionalProjects from "./ProfessionalProjects";
 
 const FilterBtnActivationCtx = createContext();
 export { FilterBtnActivationCtx };
@@ -16,9 +18,16 @@ const ProjectTab = () => {
 		<FilterBtnActivationCtx.Provider
 			value={{ filterBtnText, setFilterBtnText, filterDropdownBtnText, setFilterDropdownBtnText }}
 		>
-			<div className="flex justify-center items-start gap-5 sm:gap-10">
-				{/* <ContentFilters totalProjects={totalProjects} /> */}
-				<TabContent filterDropdownBtnText={filterDropdownBtnText} totalProjects={totalProjects} />
+			<div className="w-full flex flex-col justify-center items-center gap-32">
+				<BestProjects />
+				<div className="flex flex-col justify-center items-center gap-10">
+					<h1 className="text-center mx-auto text-4xl sm:text-5xl font-semibold">ALL PROJECTS</h1>
+					<div className="flex justify-center items-start gap-5 sm:gap-10">
+						{/* <ContentFilters totalProjects={totalProjects} /> */}
+						<TabContent filterDropdownBtnText={filterDropdownBtnText} totalProjects={totalProjects} />
+					</div>
+				</div>
+				<ProfessionalProjects />
 			</div>
 		</FilterBtnActivationCtx.Provider>
 	);
@@ -47,7 +56,9 @@ const TabContent = ({ filterDropdownBtnText, totalProjects }) => {
 
 const Project = ({ project, index }) => {
 	return (
-		<div className={`relative w-[250px] h-[250px] rounded-lg bg-gray-900 overflow-hidden p-2`}>
+		<div
+			className={`relative transition-all duration-200 w-[250px] h-[250px] rounded-lg bg-gray-900 overflow-hidden p-2`}
+		>
 			<p className="absolute top-0 left-0 z-10 bg-black w-8 h-8 text-white flex justify-center items-center rounded-br-lg shadow-lg">
 				{index}
 			</p>
@@ -75,10 +86,10 @@ const Project = ({ project, index }) => {
 						<p className="text-[9px] font-thin">{project.completionTime}</p>
 					</div>
 					<div className="flex flex-col justify-center items-center gap-2">
-						<Link href={project.link} target={`_blank`} className="w-full">
+						<Link href={project.link} target={project.link === "#/" ? "_self" : `_blank`} className="w-full">
 							<button className="base-bg-1 px-2 py-1 text-md rounded-sm hover:opacity-60 w-full">Website</button>
 						</Link>
-						<Link href={project.codeLink} target={`_blank`} className="w-full">
+						<Link href={project.codeLink} target={project.codeLink === "#/" ? "_self" : `_blank`} className="w-full">
 							<button className="border border-white hover:bg-[#0E51FF] hover:border-transparent transition px-2 py-1 text-md rounded-sm w-full">
 								Code
 							</button>

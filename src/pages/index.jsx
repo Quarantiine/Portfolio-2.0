@@ -82,9 +82,11 @@ export default function Home() {
 			<main className="flex flex-col justify-center items-center gap-10">
 				<HeroSection heroTitleTailwind={heroTitleTailwind} heroImgTailwind={heroImgTailwind} />
 				{/* ADD A COMPONENT THAT SHOWCASES THE MOST ADVANCE PROJECTS FIRST */}
-				<div className="flex flex-col gap-5 justify-center items-center w-[90%] sm:w-[90%]">
-					<Tabs tabsBtns={tabsBtns} btnClicked={btnClicked} setBtnClicked={setBtnClicked} />
-					<ContentSection />
+				<div className="flex flex-col gap-32 justify-center items-center w-[90%] sm:w-[90%]">
+					<div className="flex flex-col gap-5 justify-center items-center">
+						<Tabs tabsBtns={tabsBtns} btnClicked={btnClicked} setBtnClicked={setBtnClicked} />
+						<ContentSection />
+					</div>
 				</div>
 			</main>
 		</TabBtnsCtx.Provider>

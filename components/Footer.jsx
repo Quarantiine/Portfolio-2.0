@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 const Footer = () => {
 	const footerData = [
@@ -7,6 +8,16 @@ const Footer = () => {
 		{ link: "https://www.linkedin.com/in/daniel-ward-071010205/", img: "/images/linkedIn-img-link.svg" },
 		{ link: "https://www.youtube.com/channel/UCGRMcnQqJE6qSJcMMVoGidQ", img: "/images/youtube-img-link.svg" },
 	];
+	const [copied, setCopied] = useState(false);
+	const [disappear, setDisappear] = useState(false);
+
+	const emailCopySystem = (text) => {
+		setCopied(true);
+		setTimeout(() => {
+			setDisappear(true);
+		}, 3000);
+		navigator.clipboard.writeText(text);
+	};
 
 	return (
 		<>
@@ -27,8 +38,46 @@ const Footer = () => {
 						<div>
 							<h1 className="text-lg font-semibold">Contact</h1>
 							<div className="flex flex-col justify-center items-start gap-1">
-								<p className="text-sm font-light select-all cursor-default">Danielward.occ@gmail.com</p>
-								<p className="text-sm font-light select-all cursor-default">(469)-329-8147</p>
+								<p className="text-sm font-medium cursor-default text-[#333] relative top-1 select-none">
+									(Recommended)
+								</p>
+								<div className="relative flex justify-start items-center">
+									<p
+										onClick={(e) => {
+											emailCopySystem(e.target.textContent);
+										}}
+										className={`text-sm font-light cursor-default btn`}
+									>
+										danielward.occ@gmail.com
+									</p>
+
+									{!disappear && (
+										<p
+											className={`text-sm font-light select-all cursor-default absolute ${
+												copied ? "bg-green-500 -left-[70px] top-0" : "base-bg-1 -left-32 animate-bounce top-1"
+											} px-2 rounded-md flex justify-center items-center gap-1 text-center`}
+										>
+											{copied ? "copied!" : "one click copy"}
+											{!copied && (
+												<span>
+													<Image
+														className="-rotate-90"
+														src={"/icons/arrow_downward.svg"}
+														alt="social media link"
+														width={15}
+														height={15}
+													/>
+												</span>
+											)}
+										</p>
+									)}
+								</div>
+								<p
+									onClick={(e) => navigator.clipboard.writeText(e.target.textContent)}
+									className="text-sm font-light cursor-default btn"
+								>
+									(469)-329-8147
+								</p>
 							</div>
 						</div>
 					</div>

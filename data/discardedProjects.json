@@ -25,7 +25,7 @@
 			{ "text": "HTML", "fullTxt": "HyperText Markup Language" },
 			{ "text": "JS", "fullTxt": "Javascript" },
 			{ "text": "SCSS", "fullTxt": "Sassy Cascading Style Sheets" },
-			{ "text": "CRApp", "fullTxt": "Create React App" },
+			{ "text": "CRA", "fullTxt": "Create React App" },
 			{ "text": "NPM", "fullTxt": "Node Package Manager" }
 		],
 		"tags": [{ "tag": "html" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }, { "tag": "create react app" }],
@@ -41,7 +41,7 @@
 			{ "text": "HTML", "fullTxt": "HyperText Markup Language" },
 			{ "text": "JS", "fullTxt": "Javascript" },
 			{ "text": "SCSS", "fullTxt": "Sassy Cascading Style Sheets" },
-			{ "text": "CRApp", "fullTxt": "Create React App" },
+			{ "text": "CRA", "fullTxt": "Create React App" },
 			{ "text": "NPM", "fullTxt": "Node Package Manager" }
 		],
 		"tags": [{ "tag": "html" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }, { "tag": "create react app" }],
@@ -57,7 +57,7 @@
 			{ "text": "HTML", "fullTxt": "HyperText Markup Language" },
 			{ "text": "JS", "fullTxt": "Javascript" },
 			{ "text": "SCSS", "fullTxt": "Sassy Cascading Style Sheets" },
-			{ "text": "CRApp", "fullTxt": "Create React App" },
+			{ "text": "CRA", "fullTxt": "Create React App" },
 			{ "text": "NPM", "fullTxt": "Node Package Manager" }
 		],
 		"tags": [{ "tag": "html" }, { "tag": "~ 1 week" }, { "tag": "replicated websites" }, { "tag": "create react app" }],
