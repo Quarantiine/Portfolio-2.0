@@ -96,13 +96,13 @@ const AboutMeTab = () => {
 				</div>
 
 				<div className="w-full text-center flex flex-col justify-center items-center gap-7">
-					<h1 className="text-3xl font-semibold">CONTACT ME</h1>
+					<h1 className="text-3xl font-semibold">COMMENT BELOW</h1>
 					<p className="w-[90%] sm:w-[550px]">
 						Thank you for visiting my portfolio. Im a dedicated React developer and I am ready to bring my skills to
-						your next project. Contact me for any questions.
+						your next project or look forward to working with you. Comment your thoughts or questions below.
 					</p>
 					<MessageSystem />
-					<div className="flex w-full flex-col justify-center items-center gap-3">
+					{/* <div className="flex w-full flex-col justify-center items-center gap-3">
 						<p>CHECK OUT MY SOCIAL MEDIAS</p>
 						<Image
 							className="animate-bounce"
@@ -111,7 +111,7 @@ const AboutMeTab = () => {
 							width={30}
 							height={30}
 						/>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>

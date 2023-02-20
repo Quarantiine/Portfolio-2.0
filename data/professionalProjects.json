@@ -11,7 +11,7 @@
 		]
 	},
 	{
-		"title": "Job Coming...",
+		"title": "Job Coming Soon",
 		"working": false,
 		"fake": true,
 		"company": [{ "name": "Untitled", "link": "#/", "fullyFunctional": false }]
