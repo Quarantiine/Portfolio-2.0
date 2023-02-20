@@ -4,7 +4,6 @@ import {
 	getDocs,
 	doc,
 	onSnapshot,
-	Firestore,
 	getFirestore,
 	deleteDoc,
 	addDoc,
