@@ -77,11 +77,11 @@ const ProfessionalProjects = () => {
 				})}
 				<div className="w-full flex justify-center items-center">
 					<Link
-						className="text-center base-bg-1 px-5 py-1 rounded-md btn"
+						className="text-center base-bg-1 px-5 py-2 rounded-md btn"
 						href={"https://www.linkedin.com/in/daniel-ward-071010205/details/experience/"}
 						target="_blank"
 					>
-						View More Experiences
+						View More
 					</Link>
 				</div>
 			</div>
