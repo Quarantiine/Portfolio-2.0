@@ -18,14 +18,14 @@ const ProfessionalProjects = () => {
 							<div
 								className={`flex flex-col justify-center items-center gap-5 ${
 									projects.fake ? "bg-[#111] border" : "hover:bg-[#000] bg-[#080808]"
-								} px-5 sm:px-10 pt-5 pb-12 rounded-lg transition-all duration-300`}
+								} px-5 sm:px-10 pt-5 pb-5 rounded-lg transition-all duration-300`}
 							>
 								{
 									<>
 										<div className="flex flex-col sm:flex-row justify-center gap-4 sm:justify-between items-center sm:gap-2 w-full">
 											<div className="flex flex-col justify-center items-center sm:items-start w-full">
 												<p
-													className={`block sm:hidden mx-auto sm:mx-0 sm:mt-auto w-[90%] sm:w-64 text-center relative sm:bottom-1 text-sm px-3 py-1 mb-5 sm:mb-0 rounded-md bg-[#333] border-2 ${
+													className={`block sm:hidden mx-auto sm:mx-0 sm:mt-auto w-full sm:w-64 text-center relative sm:bottom-1 text-sm p-1 mb-5 sm:mb-0 rounded-md bg-[#333] border-2 ${
 														projects.working ? "border-green-500" : "border-orange-500"
 													}`}
 												>
@@ -35,9 +35,9 @@ const ProfessionalProjects = () => {
 												<h1 className="text-2xl font-semibold rounded-md text-center">{projects.title}</h1>
 											</div>
 											<p
-												className={`hidden sm:block sm:mt-auto w-[90%] ${
+												className={`hidden sm:block sm:mt-auto w-full ${
 													projects.working ? "sm:w-48" : "sm:w-20"
-												} text-center text-[10px] px-3 py-1 rounded-md bg-[#333] border-2 ${
+												} text-center text-[10px] p-1 rounded-md bg-[#333] border-2 ${
 													projects.working ? "border-green-500" : "border-orange-500"
 												}`}
 											>
@@ -52,13 +52,13 @@ const ProfessionalProjects = () => {
 										{projects.company.slice(0, 1).map((project, i) => (
 											<ul key={i}>
 												<li className="relative w-full text-center sm:text-start" key={i}>
-													<div
+													{/* <div
 														className={`w-[90px] text-center h-fit absolute -bottom-7 left-0 right-0 mx-auto sm:mx-0 px-2 py-1 rounded-md ${
 															project.fullyFunctional ? "bg-green-500" : "bg-red-500"
 														} bg-[#111] text-white`}
 													>
 														<p className="text-[10px]">{project.fullyFunctional ? "Completed" : "Not Completed"}</p>
-													</div>
+													</div> */}
 													<Link
 														className="underline hover:no-underline text-center"
 														target={project.link === "#/" ? "_self" : "_blank"}
