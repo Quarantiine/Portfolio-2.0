@@ -12,23 +12,27 @@
 			{ "text": "NPM", "fullTxt": "Node Package Manager" }
 		],
 		"tags": [{ "tag": "html" }, { "tag": "1 week" }, { "tag": "replicated websites" }, { "tag": "create react app" }],
-		"completionTime": "COMPLETIONG TIME: ~ 6 days",
-		"id": 1
+		"completionTime": "COMPLETION TIME: ~ 6 days",
+		"id": 2
 	},
 	{
-		"title": "Project Coming Soon",
-		"link": "#/",
-		"codeLink": "#/",
-		"img": "/",
+		"title": "Listology",
+		"link": "https://listology.vercel.app",
+		"codeLink": "https://github.com/Quarantiine/listology-web-app",
+		"img": "/images/projectW-6.png",
 		"lang": [
-			{ "text": "N/A", "fullTxt": "N/A" },
-			{ "text": "N/A", "fullTxt": "N/A" },
-			{ "text": "N/A", "fullTxt": "N/A" },
-			{ "text": "N/A", "fullTxt": "N/A" },
-			{ "text": "N/A", "fullTxt": "N/A" }
+			{ "text": "React", "fullTxt": "React" },
+			{ "text": "JS", "fullTxt": "Javascript" },
+			{ "text": "Tailwind", "fullTxt": "Tailwind" },
+			{ "text": "Next.js", "fullTxt": "Next.js" },
+			{ "text": "NPM", "fullTxt": "Node Package Manager" },
+			{ "text": "Firebase", "fullTxt": "Firebase" },
+			{ "text": "APIs", "fullTxt": "APIs" },
+			{ "text": "CSS", "fullTxt": "Cascading Style Sheets" },
+			{ "text": "GSAP", "fullTxt": "GreenSock Animation Platform" }
 		],
-		"tags": [{ "tag": "N/A" }],
-		"completionTime": "COMPLETIONG TIME: N/A",
-		"id": 2
+		"tags": [{ "tag": "react" }, { "tag": "3 week" }, { "tag": "my web designs" }, { "tag": "next.js" }],
+		"completionTime": "COMPLETION TIME: ~ 3 weeks",
+		"id": 1
 	}
 ]

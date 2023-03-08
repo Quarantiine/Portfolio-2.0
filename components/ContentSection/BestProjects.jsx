@@ -8,24 +8,30 @@ const BestProjects = () => {
 
 	const projects = [
 		{
-			title: "Elegant Themes Replica",
-			link: "https://quarantiine.github.io/Professional-Website-4/",
-			codeLink: "https://github.com/Quarantiine/Professional-Website-4",
-			img: "/images/projectW-5.png",
+			title: "Listology",
+			link: "https://listology.vercel.app",
+			codeLink: "https://github.com/Quarantiine/listology-web-app",
+			img: "/images/projectW-6.png",
 			lang: [
-				{ text: "HTML", fullTxt: "HyperText Markup Language" },
+				{ text: "React", fullTxt: "React" },
 				{ text: "JS", fullTxt: "Javascript" },
-				{ text: "SCSS", fullTxt: "Sassy Cascading Style Sheets" },
-				{ text: "CRA", fullTxt: "Create React App" },
+				{ text: "Tailwind", fullTxt: "Tailwind" },
+				{ text: "Next.js", fullTxt: "Next.js" },
 				{ text: "NPM", fullTxt: "Node Package Manager" },
+				{ text: "Firebase", fullTxt: "Firebase" },
+				{ text: "APIs", fullTxt: "APIs" },
+				{ text: "CSS", fullTxt: "Cascading Style Sheets" },
+				{ text: "GSAP", fullTxt: "GreenSock Animation Platform" },
 			],
-			completionTime: "COMPLETIONG TIME: ~ 6 days",
+			tags: [{ tag: "react" }, { tag: "3 week" }, { tag: "my web designs" }, { tag: "next.js" }],
+			completionTime: "COMPLETION TIME: ~ 3 weeks",
+			id: 1,
 		},
 	];
 	return (
 		<>
 			<div className="flex flex-col justify-center items-center gap-10">
-				<h1 className="text-center mx-auto text-4xl sm:text-5xl font-semibold">BEST PROJECTS</h1>
+				<h1 className="text-center mx-auto text-4xl sm:text-5xl font-semibold">BEST PROJECT</h1>
 				{projects.map((project, i) => (
 					<React.Fragment key={i}>
 						<div
