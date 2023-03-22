@@ -1,10 +1,11 @@
-import { createContext, useEffect, useRef, useState } from "react";
+import { createContext, useContext, useEffect, useRef, useState } from "react";
 import ContentFilters from "./ContentFilters";
 import data from "../../data/projects.json";
 import Link from "next/link";
 import Image from "next/image";
 import BestProjects from "./BestProjects";
 import ProfessionalProjects from "./ProfessionalProjects";
+import { ModalCtx } from "components/Layout";
 
 const FilterBtnActivationCtx = createContext();
 export { FilterBtnActivationCtx };
@@ -55,6 +56,8 @@ const TabContent = ({ filterDropdownBtnText, totalProjects }) => {
 };
 
 const Project = ({ project, index }) => {
+	const { setModalOpen, dispatchModal } = useContext(ModalCtx);
+
 	return (
 		<div
 			className={`relative transition-all duration-200 w-[250px] h-[250px] rounded-lg bg-gray-900 overflow-hidden p-2`}
@@ -90,10 +93,26 @@ const Project = ({ project, index }) => {
 							<button className="base-bg-1 px-2 py-1 text-md rounded-sm hover:opacity-60 w-full">Website</button>
 						</Link>
 						<Link href={project.codeLink} target={project.codeLink === "#/" ? "_self" : `_blank`} className="w-full">
-							<button className="border border-white hover:bg-[#0E51FF] hover:border-transparent transition px-2 py-1 text-md rounded-sm w-full">
+							<button className="border bg-white text-black hover:text-white border-white hover:bg-[#0E51FF] hover:border-transparent transition px-2 py-1 text-md rounded-sm w-full">
 								Code
 							</button>
 						</Link>
+						{project.design && (
+							<button
+								onClick={() => {
+									setModalOpen(true);
+									dispatchModal({
+										type: "Modal",
+										payload: {
+											link: project.design,
+										},
+									});
+								}}
+								className="border border-white hover:bg-[#0E51FF] hover:border-transparent transition px-2 py-1 text-md rounded-sm w-full"
+							>
+								Design
+							</button>
+						)}
 					</div>
 				</div>
 			</div>

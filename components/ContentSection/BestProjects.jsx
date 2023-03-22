@@ -1,16 +1,17 @@
-import Loader from "components/Loader";
+import { ModalCtx } from "components/Layout";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useContext } from "react";
 
 const BestProjects = () => {
-	const [loaded, setLoaded] = useState(false);
-
+	const { setModalOpen, dispatchModal } = useContext(ModalCtx);
 	const projects = [
 		{
 			title: "Listology",
 			link: "https://listology.vercel.app",
 			codeLink: "https://github.com/Quarantiine/listology-web-app",
+			design:
+				"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBcKejUbWPEUDTNZnIKGtIU%2FPersonal-Prototypes%3Fnode-id%3D1031%253A4%26t%3DDjA6UwMLa15TuPVv-1",
 			img: "/images/projectW-6.png",
 			lang: [
 				{ text: "React", fullTxt: "React" },
@@ -80,10 +81,26 @@ const BestProjects = () => {
 											</button>
 										</Link>
 										<Link href={project.codeLink} target={`_blank`} className="w-full">
-											<button className="border px-2 py-1 border-white hover:bg-[#0E51FF] hover:border-transparent transition sm:px-10 sm:py-2 text-md sm:text-xl rounded-sm w-full">
+											<button className="border px-2 py-1 bg-white text-black hover:text-white border-white hover:bg-[#0E51FF] hover:border-transparent transition sm:px-10 sm:py-2 text-md sm:text-xl rounded-sm w-full">
 												Code
 											</button>
 										</Link>
+										{project.design && (
+											<button
+												onClick={() => {
+													setModalOpen(true);
+													dispatchModal({
+														type: "Modal",
+														payload: {
+															link: project.design,
+														},
+													});
+												}}
+												className="border px-2 py-1 border-white hover:bg-[#0E51FF] hover:border-transparent transition sm:px-10 sm:py-2 text-md sm:text-xl rounded-sm w-full"
+											>
+												Design
+											</button>
+										)}
 									</div>
 								</div>
 							</div>

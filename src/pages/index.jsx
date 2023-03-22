@@ -79,7 +79,7 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/images/youtube logo 1 sm.png" />
 			</Head>
-			<main className="flex flex-col justify-center items-center gap-10">
+			<main id="main-index" className="flex flex-col justify-center items-center gap-10">
 				<HeroSection heroTitleTailwind={heroTitleTailwind} heroImgTailwind={heroImgTailwind} />
 				{/* ADD A COMPONENT THAT SHOWCASES THE MOST ADVANCE PROJECTS FIRST */}
 				<div className="flex flex-col gap-32 justify-center items-center w-[90%] sm:w-[90%]">
