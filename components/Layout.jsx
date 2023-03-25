@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
 	const [stateModal, dispatchModal] = useReducer(modalReducer, { link: "" });
 	const [modalOpen, setModalOpen] = useState(false);
 
-	useEffect(() => console.log(stateModal.link));
+	// useEffect(() => console.log(stateModal.link));
 
 	useEffect(() => {
 		document.readyState ? setLoadDoc(true) : setLoadDoc(false);

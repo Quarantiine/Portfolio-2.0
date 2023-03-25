@@ -11,7 +11,7 @@ const BestProjects = () => {
 			link: "https://listology.vercel.app",
 			codeLink: "https://github.com/Quarantiine/listology-web-app",
 			design:
-				"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBcKejUbWPEUDTNZnIKGtIU%2FPersonal-Prototypes%3Fnode-id%3D1031%253A4%26t%3DDjA6UwMLa15TuPVv-1",
+				"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBcKejUbWPEUDTNZnIKGtIU%2FPersonal-Prototypes%3Fnode-id%3D1135%253A4%26t%3Dlk6lxD9xcof0CFJf-1",
 			img: "/images/projectW-6.png",
 			lang: [
 				{ text: "React", fullTxt: "React" },
