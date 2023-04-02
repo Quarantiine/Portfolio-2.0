@@ -96,7 +96,7 @@ export default function Home() {
 								/>
 							</div>
 							<iframe
-								className="w-fit h-full"
+								className="w-full h-full"
 								src="https://docs.google.com/document/d/e/2PACX-1vTItz0Ftec9Wjkd36g0ojZGFCfwQaINrYdGsC25qWgGWmLo52fzIlyOOyV9V9OSyxonhe4MMPFm70UL/pub?embedded=true"
 							></iframe>
 						</div>
