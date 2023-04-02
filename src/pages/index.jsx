@@ -12,6 +12,7 @@ export { TabBtnsCtx };
 export default function Home() {
 	const tabsBtns = [{ title: "Projects" }, { title: "About Me" }];
 	const [btnClicked, setBtnClicked] = useState(tabsBtns[0].title);
+	const [viewResume, setViewResume] = useState(false);
 
 	const heroImgTailwind = "-translate-y-32 opacity-0";
 	const heroTitleTailwind = "-translate-y-32 opacity-0";
@@ -73,12 +74,35 @@ export default function Home() {
 	}, []);
 
 	return (
-		<TabBtnsCtx.Provider value={{ tabsBtns, btnClicked, setBtnClicked }}>
+		<TabBtnsCtx.Provider value={{ tabsBtns, btnClicked, setBtnClicked, viewResume, setViewResume }}>
 			<Head>
 				<title>Home | DWP</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/images/youtube logo 1 sm.png" />
 			</Head>
+			{
+				// Modal Section:
+				viewResume && (
+					<>
+						<div className="fixed top-0 left-0 w-full h-full z-50 bg-[rgba(0,0,0,0.8)] backdrop-blur-md flex flex-col justify-center items-center">
+							<div className="bg-black p-2 rounded-full absolute top-5 right-5 sm:top-10 sm:right-10 cursor-pointer z-10">
+								<Image
+									onClick={() => setViewResume(false)}
+									src={"/icons/close.svg"}
+									alt="close btn"
+									priority="true"
+									width={30}
+									height={30}
+								/>
+							</div>
+							<iframe
+								className="w-[70%] h-full"
+								src="https://docs.google.com/document/d/e/2PACX-1vTItz0Ftec9Wjkd36g0ojZGFCfwQaINrYdGsC25qWgGWmLo52fzIlyOOyV9V9OSyxonhe4MMPFm70UL/pub?embedded=true"
+							></iframe>
+						</div>
+					</>
+				)
+			}
 			<main id="main-index" className="flex flex-col justify-center items-center gap-10">
 				<HeroSection heroTitleTailwind={heroTitleTailwind} heroImgTailwind={heroImgTailwind} />
 				{/* ADD A COMPONENT THAT SHOWCASES THE MOST ADVANCE PROJECTS FIRST */}

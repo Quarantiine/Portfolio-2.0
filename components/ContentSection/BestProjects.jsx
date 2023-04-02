@@ -33,7 +33,7 @@ const BestProjects = () => {
 		<>
 			<div className="flex flex-col justify-center items-center gap-10">
 				<h1 className="text-center mx-auto text-4xl sm:text-5xl font-semibold">BEST PROJECT</h1>
-				{projects.map((project, i) => (
+				{/* {projects.map((project, i) => (
 					<React.Fragment key={i}>
 						<div
 							className={`relative transition-all duration-200 w-[250px] h-[250px] sm:w-[450px] sm:h-[450px] rounded-lg bg-gray-900 overflow-hidden p-2`}
@@ -43,7 +43,6 @@ const BestProjects = () => {
 							</p>
 							<div className="relative w-full h-full">
 								<div className="absolute w-full h-full top-0 left-0 rounded-md overflow-hidden">
-									{/* <Loader disableText={true} /> */}
 									<Image
 										className="object-cover object-top"
 										src={project.img}
@@ -106,7 +105,8 @@ const BestProjects = () => {
 							</div>
 						</div>
 					</React.Fragment>
-				))}
+				))} */}
+				<p>Projects coming soon</p>
 			</div>
 		</>
 	);
