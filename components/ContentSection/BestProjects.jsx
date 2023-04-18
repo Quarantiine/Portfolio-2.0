@@ -7,33 +7,29 @@ const BestProjects = () => {
 	const { setModalOpen, dispatchModal } = useContext(ModalCtx);
 	const projects = [
 		{
-			title: "Listology",
-			link: "https://listology.vercel.app",
-			codeLink: "https://github.com/Quarantiine/listology-web-app",
-			design:
-				"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBcKejUbWPEUDTNZnIKGtIU%2FPersonal-Prototypes%3Fnode-id%3D1135%253A4%26t%3Dlk6lxD9xcof0CFJf-1",
-			img: "/images/projectW-6.png",
+			title: "Coming Soon",
+			link: "#/",
+			codeLink: "#/",
+			design: "",
+			img: "",
 			lang: [
-				{ text: "React", fullTxt: "React" },
-				{ text: "JS", fullTxt: "Javascript" },
-				{ text: "Tailwind", fullTxt: "Tailwind" },
-				{ text: "Next.js", fullTxt: "Next.js" },
-				{ text: "NPM", fullTxt: "Node Package Manager" },
-				{ text: "Firebase", fullTxt: "Firebase" },
-				{ text: "APIs", fullTxt: "APIs" },
-				{ text: "CSS", fullTxt: "Cascading Style Sheets" },
-				{ text: "GSAP", fullTxt: "GreenSock Animation Platform" },
+				{ text: "N/A", fullTxt: "not applicable" },
+				{ text: "N/A", fullTxt: "not applicable" },
+				{ text: "N/A", fullTxt: "not applicable" },
+				{ text: "N/A", fullTxt: "not applicable" },
+				{ text: "N/A", fullTxt: "not applicable" },
 			],
-			tags: [{ tag: "react" }, { tag: "3 week" }, { tag: "my web designs" }, { tag: "next.js" }],
-			completionTime: "COMPLETION TIME: ~ 3 weeks",
+			tags: [{ tag: "N/A" }, { tag: "N/A" }, { tag: "N/A" }, { tag: "N/A" }],
+			completionTime: "COMPLETION TIME: [TIME]",
 			id: 1,
 		},
 	];
+
 	return (
 		<>
 			<div className="flex flex-col justify-center items-center gap-10">
 				<h1 className="text-center mx-auto text-4xl sm:text-5xl font-semibold">BEST PROJECT</h1>
-				{/* {projects.map((project, i) => (
+				{projects.map((project, i) => (
 					<React.Fragment key={i}>
 						<div
 							className={`relative transition-all duration-200 w-[250px] h-[250px] sm:w-[450px] sm:h-[450px] rounded-lg bg-gray-900 overflow-hidden p-2`}
@@ -105,8 +101,7 @@ const BestProjects = () => {
 							</div>
 						</div>
 					</React.Fragment>
-				))} */}
-				<p>Projects coming soon</p>
+				))}
 			</div>
 		</>
 	);

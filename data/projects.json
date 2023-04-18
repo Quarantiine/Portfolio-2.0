@@ -1,40 +1,19 @@
 [
 	{
-		"title": "Elegant Themes Replica",
-		"link": "https://quarantiine.github.io/Professional-Website-4/",
-		"codeLink": "https://github.com/Quarantiine/Professional-Website-4",
+		"title": "Coming Soon",
+		"link": "#/",
+		"codeLink": "#/",
 		"design": "",
-		"img": "/images/projectW-5.png",
+		"img": "",
 		"lang": [
-			{ "text": "HTML", "fullTxt": "HyperText Markup Language" },
-			{ "text": "JS", "fullTxt": "Javascript" },
-			{ "text": "SCSS", "fullTxt": "Sassy Cascading Style Sheets" },
-			{ "text": "CRA", "fullTxt": "Create React App" },
-			{ "text": "NPM", "fullTxt": "Node Package Manager" }
+			{ "text": "N/A", "fullTxt": "not applicable" },
+			{ "text": "N/A", "fullTxt": "not applicable" },
+			{ "text": "N/A", "fullTxt": "not applicable" },
+			{ "text": "N/A", "fullTxt": "not applicable" },
+			{ "text": "N/A", "fullTxt": "not applicable" }
 		],
-		"tags": [{ "tag": "html" }, { "tag": "1 week" }, { "tag": "replicated websites" }, { "tag": "create react app" }],
-		"completionTime": "COMPLETION TIME: ~ 6 days",
-		"id": 2
-	},
-	{
-		"title": "Listology",
-		"link": "https://listology.vercel.app",
-		"codeLink": "https://github.com/Quarantiine/listology-web-app",
-		"design": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBcKejUbWPEUDTNZnIKGtIU%2FPersonal-Prototypes%3Fnode-id%3D1135%253A4%26t%3Dlk6lxD9xcof0CFJf-1",
-		"img": "/images/projectW-6.png",
-		"lang": [
-			{ "text": "React", "fullTxt": "React" },
-			{ "text": "JS", "fullTxt": "Javascript" },
-			{ "text": "Tailwind", "fullTxt": "Tailwind" },
-			{ "text": "Next.js", "fullTxt": "Next.js" },
-			{ "text": "NPM", "fullTxt": "Node Package Manager" },
-			{ "text": "Firebase", "fullTxt": "Firebase" },
-			{ "text": "APIs", "fullTxt": "APIs" },
-			{ "text": "CSS", "fullTxt": "Cascading Style Sheets" },
-			{ "text": "GSAP", "fullTxt": "GreenSock Animation Platform" }
-		],
-		"tags": [{ "tag": "react" }, { "tag": "3 week" }, { "tag": "my web designs" }, { "tag": "next.js" }],
-		"completionTime": "COMPLETION TIME: ~ 3 weeks",
+		"tags": [{ "tag": "N/A" }, { "tag": "N/A" }, { "tag": "N/A" }, { "tag": "N/A" }],
+		"completionTime": "COMPLETION TIME: [TIME]",
 		"id": 1
 	}
 ]
