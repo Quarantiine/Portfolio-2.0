@@ -19,8 +19,8 @@ const ProjectTab = () => {
 			value={{ filterBtnText, setFilterBtnText, filterDropdownBtnText, setFilterDropdownBtnText }}
 		>
 			<div className="w-full flex flex-col justify-center items-center gap-32">
-				{/* <BestProjects /> */}
-				<div className="flex flex-col justify-center items-center gap-10">
+				<BestProjects />
+				{/* <div className="flex flex-col justify-center items-center gap-10">
 					<div className="flex flex-col justify-center items-center gap-4">
 						<h1 className="text-center mx-auto text-4xl sm:text-5xl font-semibold">PERSONAL PROJECTS</h1>
 						<h2 className="text-lg font-thin text-center w-[70%]">
@@ -28,11 +28,11 @@ const ProjectTab = () => {
 						</h2>
 					</div>
 					<div className="flex justify-center items-start gap-5 sm:gap-10">
-						{/* <ContentFilters totalProjects={totalProjects} /> */}
-						{/* <TabContent filterDropdownBtnText={filterDropdownBtnText} totalProjects={totalProjects} /> */}
+						<ContentFilters totalProjects={totalProjects} />
+						<TabContent filterDropdownBtnText={filterDropdownBtnText} totalProjects={totalProjects} />
 						<p>Projects coming soon</p>
 					</div>
-				</div>
+				</div> */}
 				<ProfessionalProjects />
 			</div>
 		</FilterBtnActivationCtx.Provider>

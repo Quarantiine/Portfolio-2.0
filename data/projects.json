@@ -1,19 +1,26 @@
 [
 	{
-		"title": "Coming Soon",
-		"link": "#/",
-		"codeLink": "#/",
+		"title": "Listology",
+		"link": "https://listology.vercel.app/",
+		"codeLink": "https://github.com/Quarantiine/todo-list-advance",
 		"design": "",
-		"img": "",
+		"img": "/images/listology-img.png",
 		"lang": [
-			{ "text": "N/A", "fullTxt": "not applicable" },
-			{ "text": "N/A", "fullTxt": "not applicable" },
-			{ "text": "N/A", "fullTxt": "not applicable" },
-			{ "text": "N/A", "fullTxt": "not applicable" },
-			{ "text": "N/A", "fullTxt": "not applicable" }
+			{ "text": "React", "fullTxt": "React" },
+			{ "text": "Tailwind", "fullTxt": "Tailwind" },
+			{ "text": "JS", "fullTxt": "Javascript" },
+			{ "text": "TS", "fullTxt": "Typescript" },
+			{ "text": "Css", "fullTxt": "Cascading Style Sheets" },
+			{ "text": "Html", "fullTxt": "Hyper Text Language" },
+			{ "text": "Next.js", "fullTxt": "Next.js" },
+			{ "text": "Firebase", "fullTxt": "Firebase" },
+			{ "text": "NPM", "fullTxt": "Node Package Manager" },
+			{ "text": "UI Design", "fullTxt": "User Interface Design" },
+			{ "text": "Figma", "fullTxt": "Figma" },
+			{ "text": "Git", "fullTxt": "Git" }
 		],
 		"tags": [{ "tag": "N/A" }, { "tag": "N/A" }, { "tag": "N/A" }, { "tag": "N/A" }],
-		"completionTime": "COMPLETION TIME: [TIME]",
+		"completionTime": "COMPLETION TIME: 4 weeks",
 		"id": 1
 	}
 ]
