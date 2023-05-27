@@ -9,7 +9,7 @@ const BestProjects = () => {
 		{
 			title: "Listology",
 			link: "https://listology.vercel.app/",
-			codeLink: "https://github.com/Quarantiine/todo-list-advance",
+			codeLink: "",
 			design: "",
 			img: "/images/listology-img.png",
 			lang: [
@@ -76,17 +76,19 @@ const BestProjects = () => {
 											<p className="text-[9px] sm:text-base font-thin">{project.completionTime}</p>
 										</div>
 									</div>
-									<div className="flex flex-col justify-center items-center gap-2">
-										<Link href={project.link} target={`_blank`} className="w-full">
+									<div className="flex flex-col justify-center items-center gap-2 h-fit">
+										<Link href={project.link} target={`_blank`} className="w-full relative bottom-1">
 											<button className="base-bg-1 px-2 py-1 sm:px-10 sm:py-2 text-md sm:text-xl rounded-sm hover:opacity-60 w-full">
 												Website
 											</button>
 										</Link>
-										<Link href={project.codeLink} target={`_blank`} className="w-full">
-											<button className="border px-2 py-1 bg-white text-black hover:text-white border-white hover:bg-[#0E51FF] hover:border-transparent transition sm:px-10 sm:py-2 text-md sm:text-xl rounded-sm w-full">
-												Code
-											</button>
-										</Link>
+										{project.codeLink && (
+											<Link href={project.codeLink} target={`_blank`} className="w-full">
+												<button className="border px-2 py-1 bg-white text-black hover:text-white border-white hover:bg-[#0E51FF] hover:border-transparent transition sm:px-10 sm:py-2 text-md sm:text-xl rounded-sm w-full">
+													Code
+												</button>
+											</Link>
+										)}
 										{project.design && (
 											<button
 												onClick={() => {
