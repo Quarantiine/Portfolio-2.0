@@ -19,8 +19,42 @@
 			{ "text": "Figma", "fullTxt": "Figma" },
 			{ "text": "Git", "fullTxt": "Git" }
 		],
-		"tags": [{ "tag": "N/A" }, { "tag": "N/A" }, { "tag": "N/A" }, { "tag": "N/A" }],
+		"tags": [
+			{ "tag": "N/A" },
+			{ "tag": "N/A" },
+			{ "tag": "N/A" },
+			{ "tag": "N/A" }
+		],
 		"completionTime": "COMPLETION TIME: 4 weeks",
+		"id": 1
+	},
+
+	{
+		"title": "Pronounciology",
+		"link": "https://pronounciology.vercel.app/",
+		"codeLink": "https://github.com/Quarantiine/Pronounciology",
+		"design": "",
+		"img": "/images/pronounciology-image.png",
+		"lang": [
+			{ "text": "React", "fullTxt": "React" },
+			{ "text": "Tailwind", "fullTxt": "Tailwind" },
+			{ "text": "JS", "fullTxt": "Javascript" },
+			{ "text": "TS", "fullTxt": "Typescript" },
+			{ "text": "Css", "fullTxt": "Cascading Style Sheets" },
+			{ "text": "Html", "fullTxt": "Hyper Text Language" },
+			{ "text": "Next.js", "fullTxt": "Next.js" },
+			{ "text": "NPM", "fullTxt": "Node Package Manager" },
+			{ "text": "UI Design", "fullTxt": "User Interface Design" },
+			{ "text": "Figma", "fullTxt": "Figma" },
+			{ "text": "Git", "fullTxt": "Git" }
+		],
+		"tags": [
+			{ "tag": "N/A" },
+			{ "tag": "N/A" },
+			{ "tag": "N/A" },
+			{ "tag": "N/A" }
+		],
+		"completionTime": "COMPLETION TIME: ~ 3 Days",
 		"id": 1
 	}
 ]
