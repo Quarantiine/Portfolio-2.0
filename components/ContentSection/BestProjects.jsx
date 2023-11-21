@@ -9,7 +9,7 @@ const BestProjects = () => {
 		{
 			title: "Listology",
 			link: "https://listology.vercel.app/",
-			codeLink: "",
+			codeLink: "https://github.com/Quarantiine/todo-list-advance",
 			design: "",
 			img: "/images/listology-img.png",
 			lang: [
@@ -34,7 +34,7 @@ const BestProjects = () => {
 		{
 			title: "Pronounciology",
 			link: "https://pronounciology.vercel.app/",
-			codeLink: "",
+			codeLink: "https://github.com/Quarantiine/Pronounciology",
 			design: "",
 			img: "/images/pronounciology-image.png",
 			lang: [
