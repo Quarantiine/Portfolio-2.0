@@ -9,7 +9,7 @@ const BestProjects = () => {
 		{
 			title: "Listology",
 			link: "https://listology.vercel.app/",
-			codeLink: "https://github.com/Quarantiine/todo-list-advance",
+			codeLink: "https://github.com/Quarantiine/Listology",
 			design: "",
 			img: "/images/listology-img.png",
 			lang: [
@@ -62,7 +62,7 @@ const BestProjects = () => {
 				<h1 className="text-center mx-auto text-4xl sm:text-5xl font-semibold">
 					BEST PROJECT
 				</h1>
-				<div className="flex flex-wrap gap-10">
+				<div className="flex flex-wrap gap-10 justify-center items-center">
 					{projects.map((project, i) => (
 						<React.Fragment key={i}>
 							<div
