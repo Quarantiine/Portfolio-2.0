@@ -74,7 +74,9 @@ export default function Home() {
 	}, []);
 
 	return (
-		<TabBtnsCtx.Provider value={{ tabsBtns, btnClicked, setBtnClicked, viewResume, setViewResume }}>
+		<TabBtnsCtx.Provider
+			value={{ tabsBtns, btnClicked, setBtnClicked, viewResume, setViewResume }}
+		>
 			<Head>
 				<title>Home | DWP</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -97,18 +99,28 @@ export default function Home() {
 							</div>
 							<iframe
 								className="w-full h-full"
-								src="https://docs.google.com/document/d/e/2PACX-1vTItz0Ftec9Wjkd36g0ojZGFCfwQaINrYdGsC25qWgGWmLo52fzIlyOOyV9V9OSyxonhe4MMPFm70UL/pub?embedded=true"
+								src="https://docs.google.com/document/d/1GW_PTOP8SE4X8oXp_ifByVXzpE0OSj4qh-XFnaUmNHI/edit#heading=h.yk8luflkpwij"
 							></iframe>
 						</div>
 					</>
 				)
 			}
-			<main id="main-index" className="flex flex-col justify-center items-center gap-10">
-				<HeroSection heroTitleTailwind={heroTitleTailwind} heroImgTailwind={heroImgTailwind} />
+			<main
+				id="main-index"
+				className="flex flex-col justify-center items-center gap-10"
+			>
+				<HeroSection
+					heroTitleTailwind={heroTitleTailwind}
+					heroImgTailwind={heroImgTailwind}
+				/>
 				{/* ADD A COMPONENT THAT SHOWCASES THE MOST ADVANCE PROJECTS FIRST */}
 				<div className="flex flex-col gap-32 justify-center items-center w-[90%] sm:w-[90%]">
 					<div className="flex flex-col gap-5 justify-center items-center">
-						<Tabs tabsBtns={tabsBtns} btnClicked={btnClicked} setBtnClicked={setBtnClicked} />
+						<Tabs
+							tabsBtns={tabsBtns}
+							btnClicked={btnClicked}
+							setBtnClicked={setBtnClicked}
+						/>
 						<ContentSection />
 					</div>
 				</div>
@@ -148,9 +160,19 @@ const HeroSection = ({ heroTitleTailwind, heroImgTailwind }) => {
 				}`}
 			>
 				<div className="absolute left-0 right-0 mx-auto z-10 flex flex-col items-center justify-center gap-3 text-center px-10">
-					<h1 className={`${heroTitleTailwind} hero-title text-4xl sm:text-6xl font-bold`}>MY PORTFOLIO</h1>
-					<h2 className={`${heroTitleTailwind} hero-title text-xl font-light`}>YOU WILL BE AMAZED</h2>
-					<h3 className={`${heroTitleTailwind} hero-title text-[10px] font-thin text-[#444]`}>BY: DANIEL WARD</h3>
+					<h1
+						className={`${heroTitleTailwind} hero-title text-4xl sm:text-6xl font-bold`}
+					>
+						MY PORTFOLIO
+					</h1>
+					<h2 className={`${heroTitleTailwind} hero-title text-xl font-light`}>
+						YOU WILL BE AMAZED
+					</h2>
+					<h3
+						className={`${heroTitleTailwind} hero-title text-[10px] font-thin text-[#444]`}
+					>
+						BY: DANIEL WARD
+					</h3>
 				</div>
 				<Image
 					className={`${heroImgTailwind} hero-img object-cover object-top`}
