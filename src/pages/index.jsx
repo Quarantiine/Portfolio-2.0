@@ -4,6 +4,7 @@ import { createContext, useEffect, useState } from "react";
 import gsap from "gsap/dist/gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import ContentSection from "components/ContentSection/ContentSection";
+import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 
 const TabBtnsCtx = createContext();
@@ -97,10 +98,7 @@ export default function Home() {
 									height={30}
 								/>
 							</div>
-							<iframe
-								className="w-full h-full"
-								src="https://docs.google.com/document/d/1GW_PTOP8SE4X8oXp_ifByVXzpE0OSj4qh-XFnaUmNHI/edit#heading=h.yk8luflkpwij"
-							></iframe>
+							{/* IFRAME */}
 						</div>
 					</>
 				)
