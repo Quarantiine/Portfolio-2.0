@@ -52,7 +52,31 @@ const BestProjects = () => {
 			],
 			tags: [{ tag: "N/A" }, { tag: "N/A" }, { tag: "N/A" }, { tag: "N/A" }],
 			completionTime: "COMPLETION TIME: ~ 3 Days",
-			id: 1,
+			id: 2,
+		},
+
+		{
+			title: "QuickStudy",
+			link: "https://quickstudy.vercel.app/",
+			codeLink: "https://github.com/Quarantiine/QuickStudy",
+			design: "",
+			img: "/images/quickstudy-img.png",
+			lang: [
+				{ text: "React", fullTxt: "React" },
+				{ text: "Tailwind", fullTxt: "Tailwind" },
+				{ text: "JS", fullTxt: "Javascript" },
+				{ text: "TS", fullTxt: "Typescript" },
+				{ text: "Css", fullTxt: "Cascading Style Sheets" },
+				{ text: "Html", fullTxt: "Hyper Text Language" },
+				{ text: "Next.js", fullTxt: "Next.js" },
+				{ text: "NPM", fullTxt: "Node Package Manager" },
+				{ text: "UI", fullTxt: "User Interface Design" },
+				{ text: "Figma", fullTxt: "Figma" },
+				{ text: "Git", fullTxt: "Git" },
+			],
+			tags: [{ tag: "N/A" }, { tag: "N/A" }, { tag: "N/A" }, { tag: "N/A" }],
+			completionTime: "COMPLETION TIME: ~ 7 Days",
+			id: 3,
 		},
 	];
 
@@ -74,7 +98,7 @@ const BestProjects = () => {
 								<div className="relative w-full h-full">
 									<div className="absolute w-full h-full top-0 left-0 rounded-md overflow-hidden">
 										<Image
-											className="object-cover object-top"
+											className="object-cover"
 											src={project.img}
 											alt={`${project.title} img`}
 											fill
