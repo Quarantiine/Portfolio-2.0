@@ -32,6 +32,7 @@ const AboutMeTab = () => {
 							and delivering exceptional user experiences.
 						</p>
 						<Link
+							target="_blank"
 							href="https://docs.google.com/document/d/e/2PACX-1vQySjAs9ysPn9Qu5w_wcen5MyyHwofOtkTuyDeVtmH8LePwcKVqhJ9E0UQR-oZvcRqevI1kDCXmYQ2k/pub"
 							// onClick={() => setViewResume(!viewResume)}
 							className="mt-5 px-5 py-1 rounded-md base-bg-1 hover:opacity-80 transition-all"

@@ -33,7 +33,7 @@ const BestProjects = () => {
 
 		{
 			title: "Pronounciology",
-			link: "https://pronounciology.vercel.app/",
+			link: "https://pronounciology-speech.vercel.app/",
 			codeLink: "https://github.com/Quarantiine/Pronounciology",
 			design: "",
 			img: "/images/pronounciology-image.png",

@@ -4,7 +4,6 @@ import { createContext, useEffect, useState } from "react";
 import gsap from "gsap/dist/gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import ContentSection from "components/ContentSection/ContentSection";
-import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 
 const TabBtnsCtx = createContext();
